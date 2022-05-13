@@ -24,7 +24,7 @@
           <a class="logo" href="./index.html">Web<span class="logo-color">Studio</span></a>
 
           <ul class="header-list">
-            <li class="item"><a class="nav-head-link" href="./index.html">Студия</a></li>
+            <li class="item current"><a class="nav-head-link" href="./index.html">Студия</a></li>
             <li class="item"><a class="nav-head-link" href="./portfolio.html">Портфолио</a></li>
             <li class="item"><a class="nav-head-link" href="">Контакты</a></li>
           </ul>
@@ -55,7 +55,19 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="section-hero-button" type="button">Заказать услугу</button>
+          <button class="section-hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              
+              <button class="modal-button-close" data-modal-close>
+                <svg class="modal-button-icon" width="18"
+                height="18">
+                <use href="./img/icons.svg#icon-modal-close"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -112,8 +124,8 @@
       <section class="section-what-doing section">
         <div class="container">
          
-
           <h2 class="biggest-title">Чем мы занимаемся</h2>
+          
           <ul class="work-process-fotos">
             <li class="item">
               <img
@@ -122,7 +134,9 @@
                 height="294"
                 alt="формирование скелета проекта"
               />
+              <p class="signature">Десктопные приложения</p>
             </li>
+            
             <li class="item">
               <img
                 src="./img/doing-section/img1.jpg"
@@ -130,6 +144,7 @@
                 height="294"
                 alt="адаптация проекта"
               />
+              <p class="signature">Мобильные приложения</p>
             </li>
             <li class="item">
               <img
@@ -138,6 +153,7 @@
                 height="294"
                 alt="дизайн проекта"
               />
+              <p class="signature">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -429,5 +445,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
