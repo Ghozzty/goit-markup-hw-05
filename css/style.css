@@ -328,6 +328,7 @@ body {
     width: 30px;
     height: 30px;
 
+    cursor: pointer;
     background-color: var(--body-bgc);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -742,9 +743,10 @@ blue card
   
     padding: 63px 34px;
 }
-.card:hover .blue-card{
-    transform: translateY(-100%);
 
+.main-portfolio-links:focus .blue-card,
+.main-portfolio-links:hover .blue-card{
+    transform: translateY(-100%);
 }
 
 
